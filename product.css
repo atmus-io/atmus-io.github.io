@@ -1,60 +1,95 @@
-.container {
-  max-width: 960px;
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(assets/brand/fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: Poppins-Light;
+  src: url(assets/brand/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(assets/brand/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(assets/brand/fonts/Poppins-SemiBold.ttf);
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.half-container {
+  max-width: 940px;
+}
+
+.medium-container {
+  max-width: 500px;
+}
+
+input {
+  outline: none;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  font-family: Poppins-Light;
+  padding-left: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
 /*
  * Custom translucent site header
  */
 
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #8e8e8e;
-  transition: color .15s ease-in-out;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
+.link-container {
   width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  transform: rotate(30deg);
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
+.site-header {
+  background-color: rgb(255, 255, 255);
+  font-family: Poppins-Light;
+  font-size: 12pt;
+  padding-top: 100px;
+  /* -webkit-backdrop-filter: saturate(180%) blur(20px); */
+  /* backdrop-filter: saturate(180%) blur(20px); */
 }
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
+.site-header a {
+  text-decoration: none;
+  color: #000;
 }
 
+button {
+  background-color: purple;
+  stroke: none;
+  color: white;
+  font-family: Poppins-SemiBold;
+  font-size: 10pt;
+  height: 45px; 
+  border: none;
+  width: 145px;
+  transition: all .15s linear;
+}
 
+button:hover {
+  text-decoration: none;
+  background:#000
+}
+
+.title-text {
+  font-family: Poppins-Light;
+  font-size: 50px;
+  text-align: left;
+}
+
+.subheading {
+  font-family: Poppins-Light;
+  font-size: 23px;
+  text-align: left;
+}
 /*
  * Extra utilities
  */
